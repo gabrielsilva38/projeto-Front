@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="icon" type="image/png" href="../Icones/road_16172971.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="forms">
+    <nav>
+        <h3>
+            <ul class="menu" id=>
+                <li><a href="./Pagina/pagina1.html">Página 1</a></li>
+                <li><a href="./Pagina/pagina2.html">Página 2</a></li>
+                <li>
+                    <a href="#">Informações</a>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/V8_engine">V8</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/V10_engine">V10</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/V12_engine">V12</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </h3>
+    </nav>
+    <form method="post" id="formulario">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome: <input type="text" placeholder="Escreva seu Nome" size="30"></label>
+            <br>
+            <label for="telefone">Telefone: <input type="tel" placeholder="(00)00000-0000" maxlength="14"/></label>
+            <br>
+            <label for="data">Data de Nascimento: <input type="date"></label>
+            <br>
+            <label for="idade">Idade: <input type="text" id="Sua idade" maxlength="2"></label>
+            <br>
+            <label for="email">Email: <input type="email" placeholder="Seu email"></label>
+            <br>
+            <label for="senha">Senha: <input type="text" maxlength="8" placeholder="Senha de 8 dígitos"></label>
+            <br>
+            <label for="endereco">Endereço:<input type="text" id="endereco" name="endereco" placeholder="Seu endereço"></label>
+            <br>
+            <label for="cidade">Cidade:<input type="text" id="cidade" name="cidade" placeholder="Sua Cidade"></label>
+            <br>
+            <label for="estado">Estado:</label>
+            <select name="estado">
+                <option value="SP" selected>São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="BA">Bahia</option>
+                <option value="AM">Amazonia</option>
+                <option value="AC">Acre</option>
+                </select>
+<h4>Estado de Nascimento:</h4>
+        <h5 id="estados">
+        <input type="radio" name="Estados" value="DF"/>DF
+        <br>
+        <input type="radio" name="Estados" value="GO"/>GO
+        <br>
+        <input type="radio" name="Estados" value="MG"/>MG
+        <br>
+        <input type="radio" name="Estados" value="MT"/>MT
+        <br>
+        <input type="radio" name="Estados" value="SP"/>SP
+        <br>
+        <input type="radio" name="Estados" value="RJ"/>RJ
+        <br>
+        <input type="radio" name="Estados" value="BA"/>BA
+        <br>
+        <input type="radio" name="Estados" value="AM"/>AM
+        <br>
+        <input type="radio" name="Estados" value="AC"/>AC
+        </h5>
+        <!--Checkbox e Envio-->
+    <h5><input type="checkbox"/>Aceito os termos</h5>
+    <input type="reset" name="reset"/>
+    <input type="submit" name="submit"/>
+
+        </fieldset>
+    </form>
+</body>
+</html>

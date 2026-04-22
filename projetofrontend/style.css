@@ -1,0 +1,163 @@
+/*==========Index==========*/
+/*=========================*/
+
+body {
+    background-color: rgb(222, 223, 213);
+    color: rgb(0, 0, 0);
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.full-widht-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h2, h6 {
+    text-align: center;
+    color: rgb(13, 13, 13);
+}
+
+#bodyindex {
+    text-align: left;
+    border: 0px;
+    margin: 0px;
+
+}
+
+.menu {
+    text-decoration: solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 2%;
+    border: none;
+    float: right;
+    background-color: rgb(218, 222, 224);
+    position: fixed;/*para deixar o menu fixo*/
+    top: -22px;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /*deixa o menu sobre os outros elementos*/
+    transition: top 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.menu li a{
+    text-decoration: none;
+}
+.menu li {
+    position: relative;
+    float: left;
+    border-right: none;
+    list-style: none;
+    width: 115px;
+    text-align: center;
+}
+
+.menu ul {
+    position: relative;
+    float: left;
+    list-style: none;
+
+}
+
+.menu li ul {
+    position: absolute;
+    top: 23px;
+    left: -70px;
+    display: none;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li {
+    border: 2px solid black;
+    background-color: rgb(212, 212, 203);
+    display: block;
+    width: 100px;
+    left: 42px;
+}
+
+.menu li:hover{
+    background-color: rgb(179, 174, 174);
+}
+
+.container-de-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr minmax(200px, 1fr));
+  gap: 15px; 
+  align-items: center;
+}
+
+.card {
+  border: 1px solid rgb(203, 234, 241);
+  background-color: rgb(220, 234, 238);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+p{
+    text-align: justify;
+    margin: 65px;
+    font-size: 17px;
+}
+#lista{
+    text-align: justify;
+    margin: 50px;
+}
+
+.rodape{
+    background-color: black;
+    color: aliceblue;
+    height: auto;
+
+}
+/*===========================*/
+/*==========Página2==========*/
+/*===========================*/
+
+#bodypag2{
+    margin-left: 23%;
+    margin-right: 30%;
+}
+
+#menu2{
+    padding: 1%;
+}
+
+#pag2{
+    text-align: justify;
+    text-align: center;
+
+}
+
+#h6pg2{
+    margin: 0px;
+    margin-left: -365px;
+}
+p{
+    text-align: left;
+
+}
+
+table, td, tr{
+    border: 1px solid;
+}
+#forms{
+    background-color: rgb(235, 226, 214);
+    justify-content: left;
+    text-align: left;
+    padding: 5%;
+}
